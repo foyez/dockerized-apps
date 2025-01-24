@@ -1,0 +1,6 @@
+services:
+  go_app:
+    build:
+      target: dev
+    volumes:
+      - .:/app # Mount the current directory to the container

@@ -1,0 +1,12 @@
+services:
+  go_app:
+    build:
+      context: .
+      target: prod
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT}:${PORT}"
+    env_file:
+      - ./app.env # Load environment variables from the app.env file
+    environment:
+      - PORT=${PORT} # Pass the PORT variable to the container

@@ -1,0 +1,10 @@
+services:
+  react-vite:
+    build:
+      target: dev
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/app # Mount the current directory to the container
+      - /app/node_modules # Exclude node_modules from the container
+

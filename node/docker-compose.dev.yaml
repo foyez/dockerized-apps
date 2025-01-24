@@ -1,0 +1,11 @@
+services:
+  node:
+    build:
+      target: dev
+    env_file:
+      - ./dev.env # Load environment variables from the dev.env file
+    environment:
+      - PORT=${PORT} # Pass the PORT variable to the container
+    volumes:
+      - .:/app # Mount the current directory to the container
+      - /app/node_modules # Exclude node_modules from the container

@@ -1,0 +1,41 @@
+# Ignore the .git directory
+.git
+
+# Ignore node_modules if you have frontend code
+node_modules
+
+# Ignore local environment variables
+.env
+
+# Ignore the Dockerfile itself
+Dockerfile
+Dockerfile.dev
+
+# Ignore Docker compose files
+docker-compose.yml
+
+# Ignore logs
+*.log
+
+# Ignore OS or editor specific files
+.DS_Store
+.idea
+*.swp
+
+# Ignore build artifacts
+/build
+/bin
+/pkg
+main
+
+# Ignore temporary files and directories
+/tmp
+*.tmp
+
+# Ignore Go test and coverage files
+*.test
+*.out
+
+# Ignore air configuration and binary in development
+.air.toml
+.air

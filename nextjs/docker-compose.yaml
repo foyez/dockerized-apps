@@ -1,0 +1,8 @@
+services:
+  nextjs:
+    build:
+      context: .
+      target: prod
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000

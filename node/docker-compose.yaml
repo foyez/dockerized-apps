@@ -1,0 +1,12 @@
+services:
+  node:
+    build:
+      context: .
+      target: prod
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT}:${PORT}"
+    env_file:
+      - .env # Load environment variables from the .env file
+    environment:
+      - PORT=${PORT} # Pass the PORT variable to the container
