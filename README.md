@@ -1,5 +1,7 @@
 # Dockerized Apps
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 A collection of containerized applications using Docker and Docker Compose, featuring:
 
 - React + Vite Application
