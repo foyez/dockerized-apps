@@ -54,7 +54,7 @@ cd <application-directory>
 docker compose -f docker-compose.yaml -f docker-compose.dev.yaml up -d --build
 
 # Start the development container with custom env file
-docker compose -env-file file-name.env \
+docker compose --env-file file-name.env \
 -f docker-compose.yaml -f docker-compose.dev.yaml up -d --build
 ```
 
