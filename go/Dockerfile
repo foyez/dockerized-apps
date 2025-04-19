@@ -1,5 +1,5 @@
 # base stage
-FROM golang:1.23.2-alpine3.19 AS base
+FROM golang:1.24.2-alpine AS base
 
 # create custom user and group
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup

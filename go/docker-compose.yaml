@@ -10,3 +10,17 @@ services:
       - ./app.env # Load environment variables from the app.env file
     environment:
       - PORT=${PORT} # Pass the PORT variable to the container
+
+  postgres:
+    image: postgres:15.2-alpine
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=testpass
+      - POSTGRES_DB=todo
+    ports:
+      - "5432:5432"
+    volumes:
+      - data-volume:/var/lib/postgresql/data
+
+volumes:
+  data-volume:
