@@ -1,5 +1,5 @@
 include app.env
-export $(shell sed 's/=.*//' app.env)
+export $(shell sed 's/=.*//' app.env.local)
 
 ## up_dev: up docker containers for development
 up_dev:

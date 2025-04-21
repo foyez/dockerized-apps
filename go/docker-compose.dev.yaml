@@ -2,5 +2,7 @@ services:
   go_app:
     build:
       target: dev
+    environment:
+      - GO_ENV=development
     volumes:
       - .:/app # Mount the current directory to the container

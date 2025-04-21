@@ -9,6 +9,7 @@ services:
     env_file:
       - ./app.env # Load environment variables from the app.env file
     environment:
+      - GO_ENV=production
       - PORT=${PORT} # Pass the PORT variable to the container
 
   postgres:
