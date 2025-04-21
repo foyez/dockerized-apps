@@ -4,11 +4,12 @@ import (
 	"context"
 	"testing"
 
+	"github.com/foyez/go/util"
 	"github.com/stretchr/testify/require"
 )
 
 func TestCreateTodo(t *testing.T) {
-	text := "Buy food"
+	text := util.RandomText()
 	todo, err := testQueries.CreateTodo(context.Background(), text)
 	require.NoError(t, err)
 	require.NotEmpty(t, todo)
